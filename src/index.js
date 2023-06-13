@@ -78,6 +78,9 @@ async function searchImages() {
 function createImageCard(image) {
   const card = document.createElement('div');
   card.classList.add('photo-card');
+  const a = document.createElement('a');
+  a.classList.add('a-card');
+  a.href = '/';
 
   const img = document.createElement('img');
   img.classList.add('card-img');
@@ -118,3 +121,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
+lightbox.refresh();
