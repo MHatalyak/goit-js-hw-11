@@ -111,4 +111,3 @@ function createImageCard(image) {
 
   return card;
 }
-//sss

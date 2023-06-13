@@ -3,23 +3,31 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .search-form input[type='text'] {
   width: 300px;
   padding: 10px;
   font-size: 16px;
+  outline: none;
+  border-color: #004d9f;
 }
 
-.search-form button[type='submit'] {
+.button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 20%;
 }
-
+.button:hover,
+.button:focus {
+  background-color: #004d9f;
+}
 /* Стилі для галереї зображень */
 .gallery {
   display: grid;
@@ -47,11 +55,7 @@
 
 /* Стилі для кнопки "Load more" */
 .load-more {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
   margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
