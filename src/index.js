@@ -78,6 +78,7 @@ function createImageCard(image) {
   card.classList.add('photo-card');
 
   const img = document.createElement('img');
+  img.classList.add('card-img');
   img.src = image.webformatURL;
   img.alt = image.tags;
   img.loading = 'lazy';
