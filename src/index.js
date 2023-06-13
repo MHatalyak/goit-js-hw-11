@@ -1,7 +1,5 @@
 import axios from 'axios';
 import { Notify } from 'notiflix';
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const form = document.getElementById('search-form');
 const gallery = document.querySelector('.gallery');
@@ -78,9 +76,6 @@ async function searchImages() {
 function createImageCard(image) {
   const card = document.createElement('div');
   card.classList.add('photo-card');
-  const a = document.createElement('a');
-  a.classList.add('a-card');
-  a.href = '/';
 
   const img = document.createElement('img');
   img.classList.add('card-img');
@@ -117,8 +112,3 @@ function createImageCard(image) {
 
   return card;
 }
-const lightbox = new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',
-  captionDelay: 250,
-});
-lightbox.refresh();
